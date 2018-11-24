@@ -4,6 +4,7 @@ class Song
   attr_reader :genre
 
   def initialize(name, artist=nil, genre=nil)
+    @@all << self
     @name = name
     if artist
       self.artist = artist
