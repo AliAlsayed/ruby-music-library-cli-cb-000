@@ -48,7 +48,7 @@ class Song
     if !song
       Song.create(name)
     else
-      song
+      return song
     end
   end
 
