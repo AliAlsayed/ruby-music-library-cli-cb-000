@@ -17,6 +17,9 @@ class Song
     @@all
   end
 
+  def genre=(genre)
+  end
+
   def self.destroy_all
     @@all.clear
   end
