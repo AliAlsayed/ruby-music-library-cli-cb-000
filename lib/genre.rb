@@ -14,7 +14,7 @@ class Genre
     @@all.clear
   end
 
-  def artist
+  def artists
     Song.all.map{|song| song.artist if song.genre == self}.uniq
   end
 
