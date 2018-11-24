@@ -44,9 +44,9 @@ class Song
   end
 
   def self.find_or_create_by_name(name)
-    song = Song.find_by_name(name)
+    song = self.find_by_name(name)
     if !song
-      song = Song.create(name)
+      song = self.create(name)
     end
     song
   end
