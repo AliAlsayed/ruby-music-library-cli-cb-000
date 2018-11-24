@@ -46,10 +46,9 @@ class Song
   def self.find_or_create_by_name(name)
     song = Song.find_by_name(name)
     if !song
-      Song.create(name)
-    else
-      return song
+      song = Song.create(name)
     end
+    song
   end
 
   # def artist=(artist)
