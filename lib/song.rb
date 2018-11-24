@@ -28,7 +28,7 @@ class Song
   end
 
   def save
-    if !@@ll.include?(self)
+    if !@@all.include?(self)
       @@all << self
     end
   end
