@@ -1,9 +1,10 @@
 class Artist
   @@all = []
-  attr_accessor :name, :songs
+  attr_accessor :name, :songs, :genres
   def initialize(name)
     @name = name
-    @songs = []
+    #@songs = []
+    @genres
   end
 
   def self.all
@@ -22,6 +23,10 @@ class Artist
     artist = Artist.new(name)
     artist.save
     artist
+  end
+
+  def genres
+    @songs.map{|song| song.genre}.uniq
   end
 
   def add_song(song)
