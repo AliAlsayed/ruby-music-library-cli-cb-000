@@ -37,6 +37,12 @@ class Song
     song
   end
 
+  def self.find_by_name(name)
+    @@all.each do |song|
+      return song if song.name == name
+    end
+  end
+
   # def artist=(artist)
   #   if artist
   #     artist.add_song(self)
