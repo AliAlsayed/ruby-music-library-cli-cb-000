@@ -41,6 +41,6 @@ class Song
       artist.add_song(self)
       @artist = artist
     end
-    
+
   end
 end
