@@ -9,7 +9,7 @@ class Song
       self.artist = artist
     end
     self.genre = genre
-    @@all << self
+    #@@all << self
   end
 
   def self.all
