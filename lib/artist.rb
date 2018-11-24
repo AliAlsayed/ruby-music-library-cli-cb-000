@@ -25,7 +25,7 @@ class Artist
   end
 
   def genres
-    Song.all{|song| song.genre if song.artist == self}
+    Song.all.map{|song| song.genre if song.artist == self}
   end
 
   def add_song(song)
